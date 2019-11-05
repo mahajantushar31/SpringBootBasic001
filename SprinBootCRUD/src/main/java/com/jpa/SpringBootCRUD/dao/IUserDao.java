@@ -5,7 +5,7 @@ import java.io.Serializable;
 import com.jpa.SprinBootCRUD.entity.User;
 import com.jpa.SpringBootCRUD.generic.GenericDao;
 
-public interface IUserDao extends GenericDao<User >{
+public interface IUserDao extends GenericDao<User,Long>{
 	 User save(User account);
 	 User findByName(String name);
 }
